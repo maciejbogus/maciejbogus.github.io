@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Individual project</title>
+        <link rel="stylesheet" href="main&nav.css">
+        <link rel="stylesheet" href="sections.css">
+        <script src="scriptScroll.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <div class="ne_out" onclick="btnScroll('0')">
+                <div class="nav_element ne1"></div>
+            </div>
+            <div class="ne_out" onclick="btnScroll('1')">
+                <div class="nav_element ne2"></div>
+            </div>
+            
+            <div class="ne_out" onclick="btnScroll('2')">
+                <div class="nav_element ne3"></div>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <div class="author_tittle">
+                    <div class="name">
+                        <h1>Autor</h1>
+                        <p>Maciej Boguś</p>
+                    </div>
+                    <div class="author_nav">
+                        <div onclick="author_nav(0)" class="author_nav_element nav_focused">
+                            O mnie<div class="line" style = "width: 30%;"></div>
+                        </div>
+                        <div onclick="author_nav(1)"  class="author_nav_element">
+                            UEK Kraków<div class="line"></div>
+                        </div>
+                        <div onclick="author_nav(2)" class="author_nav_element">
+                            Informatyka stosowana<div class="line"></div>
+                        </div>
+                        <div onclick="author_nav(3)" class="author_nav_element">
+                            Plany na przyszłość<div class="line"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="author_content_div">
+                    <div class="author_content" style="opacity: 1">
+                        <b>Nazywam się Maciej Boguś.</b> Mam 20 lat i pochodzę z Wieliczki. W 2021 ukończyłem klasę informatyczną w Technikum Energetyczno - Elektronicznym nr 9 im. Tadeusza Kościuszki. Od września tego roku studiuję Informatykę Stosowaną na Uniwersytecie Ekonomicznym w Krakowie. W 2015 ukończyłem Szkołę Muzyczną I stopnia w Wieliczce. Moimi głównymi instrumentami były pianino i perkusja. Interesuję się m. in:<br>
+                        <ul>
+                            <li>Informatyką</li>
+                            <li>Muzyką</li>
+                            <li>Przemysłem kosmicznym</li>
+                            <li>Technologią</li>
+                        </ul>
+                    </div>
+                    <div class="author_content"><b>Uniwersytet Ekonomiczny w Krakowie</b> powstał w roku 1925. Jest jedną z pięciu polskich państwowych wyższych szkół ekonomicznych. Pod względem liczby studentów, jest największym w Polsce oraz jednym z największych w Europie uniwersytetem poświęconym naukom ekonomicznym, a także piątą co do wielkości uczelnią w Krakowie (po Uniwersytecie Jagiellońskim, Akademii Górniczo-Hutniczej, Politechnice Krakowskiej i Uniwersytecie Pedagogicznym im. KEN w Krakowie). Jest również drugą najstarszą w Polsce państwową uczelnią ekonomiczną.
+                    <br>
+                    <img src="logo.png" class="linklogo"></p>
+                </div>
+                <div class="author_content"><b>Informatyka stosowana</b> jest to dyscyplina oraz kierunek nauczania, wiążący ze sobą kompetencje informatyczne z dogłębną znajomością potrzeb określonej praktyki. Określony podzbiór wiedzy dyscypliny informatyka jest logicznie uzupełniany wiedzą specjalistyczną. W podstawowym zakresie obejmuje praktyczne wykorzystanie narzędzi informatycznych w innych dyscyplinach w każdej dziedzinie nauk</div>
+                <div class="author_content">Swoją <b>przyszłość zawodową</b> wiążę z informatyką. Moim marzeniem jest praca w firmie informatycznej jako FrontEnd Web Developer. Aby osiągnąć ten cel uczę się na kierunku 'Informatyka stosowana' na Uniwerytecie Ekonomicznym w Krakowie i indywidualnie poszerzam moją wiedzę z zakresu tworzenia stron internetowych.</div>
+            </section>
+            <section class="se_edited">
+                2
+            </section>
+            <section>
+                <div class="internet_content">
+                    <h1>Wyszukiwarka Bing</h1>
+                    <div class="internet_describe">
+                        <p>Poniższy formularz pozwala na przeszukiwanie stron internetowych w serwisie bing.com. Spróbuj wpisać "Informatyka stosowana" i dowiedz się więcej na temat mojego kierunku studiów!</p>
+                    </div>
+                    <div class="internet_explorer">
+                        <form action="https://www.bing.com/search?">
+                            <div>
+                                <input type="text" placeholder="Informatyka stosowana">
+                                <input type="submit" value="s">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
