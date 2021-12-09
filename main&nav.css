@@ -13,7 +13,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
     overflow: hidden;
-    transition: 1s background-color;
 }
 
 nav{
@@ -61,6 +60,9 @@ section{
 .se_edited{
     background-color: rgb(104, 104, 104);
     color: white;
+    display: block;
+    padding-left: 10%;
+    font-size: 15pt;
 }
 
 .contentText{

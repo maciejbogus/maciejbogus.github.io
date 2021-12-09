@@ -14,7 +14,7 @@ function author_nav(n){
         element.style.opacity="0";
     });
     author_nav_element[n].classList.add("nav_focused")
-    line[n].style.width = "30%";
+    line[n].style.width = "20%";
 
     author_content[n].style.opacity="1";
 

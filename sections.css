@@ -114,6 +114,49 @@ ul{
     background-color: rgba(0,0,0,0.8);
 }
 
+table{
+    border: 1px solid white;
+    box-sizing: border-box;
+    font-size: 10pt;
+    text-align: center;
+    width: 90%;
+    height: 50vh;
+}
+
+.formats_description{
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+    height: 10vh;
+}
+
+.table_desc{
+    text-align: justify;
+    width: 90%;
+    padding-top: 5vh;
+    margin-bottom: 50px;
+    height: 10vh;
+}
+
+.format{
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+}
+
+button{
+    padding: 5px;
+    margin: 15px;
+}
+
+td, th{
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border: 1px solid white;
+}
+
 .internet_content{
     width: 60%;
     text-align: center;
