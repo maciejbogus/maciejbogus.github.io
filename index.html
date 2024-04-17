@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,27 +11,51 @@
     ul{
         list-style: none;
     }
+    .center-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .a{
+        border: 1px solid black;
+        padding: 50px;
+        margin: 10px;
+    }
+    .container-fluid{
+        margin-top: 50px;
+    }
 </style>
 </head>
 <body>
     <main>
-        <div class="text-center" style="margin-left: 40%; margin-right: 40%; margin-bottom: 50px; margin-top: 50px; border: 1px solid black;padding-top:10px; padding-bottom: 30px;">
-            <nav>
-                <h1>PWA Application</h1>
-                <ul class="list-group">
-                    <a href="/index.html"><li class="list-group-item-action">Home</li></a>
-                    <a href="/map.html"><li class="list-group-item-action">Map</li></a>
-                    <a href="/sos.html"><li class="list-group-item-action">Sos</li></a>
-                </ul>
-            </nav>
+        <div class="container-fluid">
+            <div class="row center-content">
+              <div class="col-xl-5 col-lg-6 col-md-8 col-10 a">
+                <nav>
+                    <h1>PWA Application</h1>
+                    <ul class="list-group">
+                        <a href="/index.html"><li class="list-group-item-action">Home</li></a>
+                        <a href="/map.html"><li class="list-group-item-action">Map</li></a>
+                        <a href="/sos.html"><li class="list-group-item-action">Sos</li></a>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="text-center" style="margin-left: 40%; margin-right: 40%; margin-bottom: 50px; margin-top: 50px; border: 1px solid black;padding-top:10px; padding-bottom: 30px;">
-            <h2>Autorzy</h2>
-            <ul class="list-group">
-                <li class="list-group-item-action" >Jakub Okrzesik 221507</li>
-                <li class="list-group-item-action" >Łukasz Zieliński 220980</li>
-                <li class="list-group-item-action" >Maciej Boguś 223136</li>
-            </ul>
+    </div>
+        <div class="container-fluid">
+            <div class="row center-content">
+              <div class="col-xl-5 col-lg-6 col-md-8 col-10 a">
+                    <h2>Autorzy</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item-action" >Jakub Okrzesik 221507</li>
+                        <li class="list-group-item-action" >Łukasz Zieliński 220980</li>
+                        <li class="list-group-item-action" >Maciej Boguś 223136</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
         </div>
     </main>
 </body>
