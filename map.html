@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        #map {
+            width: 80%;
+            height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav><a href="javascript:history.back()">Cofnij</a></nav>
+        <div id="map"></div>
+    </main>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showMap);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showMap(position) {
+            var mapOptions = {
+                center: [position.coords.latitude, position.coords.longitude],
+                zoom: 15
+            }
+            var map = new L.map('map', mapOptions);
+            var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+            map.addLayer(layer);
+
+            var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+            marker.bindPopup("Your Location").openPopup();
+        }
+        getLocation()
+    </script>
+</body>
+</html>
